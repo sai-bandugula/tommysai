@@ -1,5 +1,6 @@
 ---
-- hosts: localhost
+- hosts: webserver
+  become_method: ubuntu
   remote_user: root
   roles:
     - tomcat_role
